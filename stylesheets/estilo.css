@@ -40,7 +40,7 @@ body {
 	height: 100%;
 	min-height: 100%;
     margin: 0 auto;
-    background: url(images/fondo.jpg)no-repeat fixed center;
+    background: url(../images/fondo.jpg)no-repeat fixed center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -275,7 +275,7 @@ aside li span {
 	}
 	nav header{
 		display: table-row;
-		height: 30%;/*ajustar a tama�o dispositivo*/
+		height: 30%;/*ajustar a tamaño dispositivo*/
 		transition: background 0.5s ease-out;
 		-webkit-transition: background 0.5s ease-out;
 	}
@@ -340,7 +340,7 @@ aside li span {
 	}
 	nav header{
 		display: table-row;
-		height: 150px;/*ajustar a tamaño dispositivo*/
+		height: 150px;/*ajustar a tamaÃ±o dispositivo*/
 		transition: background 0.5s ease-out;
 		-webkit-transition: background 0.5s ease-out;
 	}
@@ -507,7 +507,7 @@ aside li span {
 		-webkit-transform: rotate3d(0,0,1,-45deg);
 		transform: rotate3d(0,0,1,-45deg);
 	}
-	/* PARA P�GINAS SECUNDARIAS */
+	/* PARA PÁGINAS SECUNDARIAS */
 	nav .redes{
 		top:90px;
 		right:30px;
