@@ -40,7 +40,7 @@ body {
 	height: 100%;
 	min-height: 100%;
     margin: 0 auto;
-    background: url(img/fondo.jpg)no-repeat fixed center;
+    background: url(images/fondo.jpg)no-repeat fixed center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -115,18 +115,15 @@ hr{ height: 1px;
 
 /* CUERPO */
 
-/* eliminación de márgenes y rellenos de elementos */
 body, div, ul, ol, li, dl, dt, dd {
     margin: 0;
     padding: 0;
 }
 
-/* listas sin viñetas */
 ul, ol {
 
 }
 
-/* colores, fuentes (tipo y tamaño) del sitio */
 header, footer {
 
 }
@@ -138,7 +135,6 @@ footer {
 
 header h1 {
 	padding-top:0.85em;
-	
 	-webkit-transition: all 0.5s ease-out;
    -moz-transition: all 0.5s ease-out;
    -o-transition: all 0.5s ease-out;
@@ -163,7 +159,6 @@ h2 { /* colores rgba y bordes de CSS3 */
 
 }
 
-/* sección principal */
 main {
 
 	z-index:1;
@@ -185,8 +180,6 @@ p, dd {
 
 }
 
-
-/* estilo de figcation y tabla */
 figcaption {
 
 }
@@ -282,7 +275,7 @@ aside li span {
 	}
 	nav header{
 		display: table-row;
-		height: 30%;/*ajustar a tamaño dispositivo*/
+		height: 30%;/*ajustar a tama�o dispositivo*/
 		transition: background 0.5s ease-out;
 		-webkit-transition: background 0.5s ease-out;
 	}
@@ -320,7 +313,6 @@ aside li span {
 	}
 }
 @media (min-width: 500px) {
-/* PARA PÁGINA PRINCIPAL */
 	nav .background{
 		position: absolute;
 		z-index: -1;
@@ -515,7 +507,7 @@ aside li span {
 		-webkit-transform: rotate3d(0,0,1,-45deg);
 		transform: rotate3d(0,0,1,-45deg);
 	}
-	/* PARA PÁGINAS SECUNDARIAS */
+	/* PARA P�GINAS SECUNDARIAS */
 	nav .redes{
 		top:90px;
 		right:30px;
@@ -579,7 +571,7 @@ aside li span {
 		position:fixed;
 	    list-style: none;
 		top:0px;
-		right:20%;/*Modificar para tamaños movil*/
+		right:20%;
 		padding:1.4em;
 	   -webkit-background-size: 50% 100%;
 	   -moz-background-size: 50% 100%;
