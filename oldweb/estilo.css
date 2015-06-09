@@ -1,0 +1,348 @@
+@font-face {
+   font-family: "bergelmir";
+   font-style: normal;
+   font-weight: bolder;
+   src: url(fuentes/bergelmir.ttf);
+}
+
+@font-face {
+   font-family: "Cobac";
+   font-style: normal;
+   font-weight: bolder;
+   src: url(fuentes/Cobac.ttf);
+}
+
+@font-face {
+   font-family: "Old";
+   font-style: normal;
+   src: url(fuentes/Old.ttf);
+}
+
+@font-face {
+   font-family: "Carneval";
+   font-style: normal;
+   font-weight: bolder;
+   src: url(fuentes/Carneval.ttf);
+}
+
+body {  
+    background: url(img/madera15.jpg) repeat;
+    font-family: "Old";
+    color black;
+    font-size: 1.1em;
+    word-spacing: 4px;
+    letter-spacing:1px; 
+}
+
+header{
+    text-shadow: -1px 0 black, 1px 0 black, 0 1px black, 0 -1px black;
+      margin-top: 5px;
+      text-align: center; 
+}
+
+
+/* NAVEGACION */
+
+#navegacion{
+  list-style: none;
+  padding: 0.4em 0.1em 0.1em 0.4em;
+  
+   -webkit-background-size: 50% 100%;
+   -moz-background-size: 50% 100%;
+   -o-background-size: 50% 100%;
+}
+
+#navegacion li{
+  display: inline-block;
+}
+
+#navegacion li a{
+  font-size: 1.6em;
+  text-decoration: none;
+  font-family: "Carneval";
+  text-shadow: -1px 0 black, 1px 0 black, 0 1px black, 0 -1px black;
+  color: #BDBDBD;
+    margin: 0.25em 0.25em 0.5em 0.25em;
+
+    -webkit-transition: all 0.4s ease-out;
+   -moz-transition: all 0.4s ease-out;
+   -o-transition: all 0.4s ease-out;
+   background: -webkit-radial-gradient(#61380B, #573C06);
+    background: -moz-radial-gradient(#61380B, #573C06);
+   
+   padding: 10px 28px 10px 28px;
+   -webkit-border-top-right-radius: 2px;
+   -moz-border-top-right-radius: 2px;
+   -o-border-top-right-radius: 2px;
+   -webkit-border-bottom-right-radius: 20px;
+   -moz-border-bottom-right-radius: 20px;
+   -o-border-bottom-right-radius: 20px;
+   -webkit-border-top-left-radius: 20px;
+   -moz-border-top-left-radius: 20px;
+   -o-border-top-left-radius: 20px;
+   -webkit-border-bottom-left-radius: 20px;
+   -moz-border-bottom-left-radius: 20px;
+   -o-border-bottom-left-radius: 20px;
+    border-color:black;
+    border-style:solid;
+   
+   -webkit-box-shadow: 4px 4px 8px black;
+   -moz-box-shadow: 4px 4px 8px black;
+   -o-box-shadow: 4px 4px 8px black;
+}
+
+#navegacion li a:hover {  
+     color:#F2F5A9;
+   padding: 14px 28px 14px 28px;
+   background: -webkit-radial-gradient(#61380B, #573C06);
+    background: -moz-radial-gradient(#61380B, #573C06);
+ }
+
+/* CUERPO */
+
+/* eliminación de márgenes y rellenos de elementos */
+body, div, ul, ol, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* listas sin viñetas */
+ul, ol {
+    margin-left: 2em;
+}
+
+/* colores, fuentes (tipo y tamaño) del sitio */
+header, footer {
+    -khtml-opacity: 0.9;      /* khtml, version anterior de safari */
+    -moz-opacity: 0.9;       /* firefox, mozilla, netscape */
+    opacity: 0.9;           /* safari, chrome, opera */
+  -webkit-border-top-right-radius: 2px;
+   -moz-border-top-right-radius: 2px;
+   -o-border-top-right-radius: 2px;
+   -webkit-border-bottom-right-radius: 20px;
+   -moz-border-bottom-right-radius: 20px;
+   -o-border-bottom-right-radius: 20px;
+   -webkit-border-top-left-radius: 20px;
+   -moz-border-top-left-radius: 20px;
+   -o-border-top-left-radius: 20px;
+   -webkit-border-bottom-left-radius: 20px;
+   -moz-border-bottom-left-radius: 20px;
+   -o-border-bottom-left-radius: 20px;
+   border-color:black;
+  border-style:solid;
+   text-decoration: none;
+   color: #BDBDBD;
+   -webkit-box-shadow: 4px 4px 8px black;
+   -moz-box-shadow: 4px 4px 8px black;
+   -o-box-shadow: 4px 4px 8px black;
+   background: -webkit-radial-gradient(#424242, black);
+    background: -moz-radial-gradient(#424242, black);
+    -webkit-transition: all 1s ease-out;
+   -moz-transition: all 1s ease-out;
+   -o-transition: all 1s ease-out;
+}
+
+footer {
+    clear:both;
+  color: #ffffff;
+  padding: 1px 1em 3.5em 1em;
+  
+}
+
+header h1 {
+  font-family: "Carneval";
+  font-size: 2.7em;
+  
+    margin: 0.25em 0.25em 0.5em 0.25em;
+}
+
+header:hover, footer:hover{
+    color:#F2F5A9;
+    border-color:#F2F5A9;
+}
+
+h2 { /* colores rgba y bordes de CSS3 */
+color: #BDBDBD;
+      text-align: center; 
+    border: 2px solid rgba(0,0,0,0.2);
+  padding: 0.25em 0.5em;
+  margin-top: 0.5em;
+  -webkit-border-top-right-radius: 2px;
+   -moz-border-top-right-radius: 2px;
+   -o-border-top-right-radius: 2px;
+   -webkit-border-bottom-right-radius: 20px;
+   -moz-border-bottom-right-radius: 20px;
+   -o-border-bottom-right-radius: 20px;
+   -webkit-border-top-left-radius: 20px;
+   -moz-border-top-left-radius: 20px;
+   -o-border-top-left-radius: 20px;
+   -webkit-border-bottom-left-radius: 20px;
+   -moz-border-bottom-left-radius: 20px;
+   -o-border-bottom-left-radius: 20px;
+   border-color:black;
+   -webkit-box-shadow: 4px 4px 8px black;
+   -moz-box-shadow: 4px 4px 8px black;
+   -o-box-shadow: 4px 4px 8px black;
+   background: -webkit-radial-gradient(#424242, black);
+    background: -moz-radial-gradient(#424242, black);
+    clear: both;
+    -webkit-transition: all 1s ease-out;
+   -moz-transition: all 1s ease-out;
+   -o-transition: all 1s ease-out;
+}
+
+h2:hover{
+    color:#F2F5A9;
+    border-color:#F2F5A9;
+}
+
+/* sección principal */
+main {
+    
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-shadow: -1px 0 black, 1px 0 #090, 0 1px black, 0 -1px black;
+    color:#F2F2F2;
+  background: -webkit-radial-gradient(#61380B, #573C06);
+    background: -moz-radial-gradient(#61380B, #573C06);
+    -webkit-box-shadow: 4px 4px 8px black;
+   -moz-box-shadow: 4px 4px 8px black;
+   -o-box-shadow: 4px 4px 8px black;
+   -webkit-border-top-right-radius: 2px;
+   -moz-border-top-right-radius: 2px;
+   -o-border-top-right-radius: 2px;
+   -webkit-border-bottom-right-radius: 20px;
+   -moz-border-bottom-right-radius: 20px;
+   -o-border-bottom-right-radius: 20px;
+   -webkit-border-top-left-radius: 20px;
+   -moz-border-top-left-radius: 20px;
+   -o-border-top-left-radius: 20px;
+   -webkit-border-bottom-left-radius: 20px;
+   -moz-border-bottom-left-radius: 20px;
+   -o-border-bottom-left-radius: 20px;
+   border-color:black;
+  border-style:solid;
+  -khtml-opacity: 0.9;      /* khtml, version anterior de safari */
+    -moz-opacity: 0.9;       /* firefox, mozilla, netscape */
+    opacity: 0.9;           /* safari, chrome, opera */
+}
+
+main a:link, main a:visited, aside a, aside a:link, aside:visited {
+    color: #31B404;
+    text-decoration: none;
+    font-weight: bolder;
+   -webkit-transition: all 1.4s ease-out;
+   -moz-transition: all 1.4s ease-out;
+   -o-transition: all 1.4s ease-out;
+}
+
+main a:hover, aside a:hover{
+  color:#FFBF00;
+}
+
+
+p, dd {
+    text-align: justify;
+}
+
+
+/* estilo de figcation y tabla */
+figcaption {
+  width: 90%;
+  margin:0 auto;
+}
+
+figcaption span {
+    visibility: hidden;
+    position: absolute;
+}
+
+figcaption:hover {
+    border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 1em;
+    box-shadow: 0.2em 0.2em 0.25em #f5a9a9 inset;
+  padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+figcaption:hover span {
+    visibility: visible;
+    position: relative;
+}
+
+/* estilo del contenido no relacionado con el documento */
+
+aside {
+  margin-left: 1em;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  background: -webkit-radial-gradient(#424242, black);
+    background: -moz-radial-gradient(#424242, black);
+    -webkit-box-shadow: 4px 4px 8px black;
+   -moz-box-shadow: 4px 4px 8px black;
+   -o-box-shadow: 4px 4px 8px black;
+   -webkit-border-top-right-radius: 2px;
+   -moz-border-top-right-radius: 2px;
+   -o-border-top-right-radius: 2px;
+   -webkit-border-bottom-right-radius: 20px;
+   -moz-border-bottom-right-radius: 20px;
+   -o-border-bottom-right-radius: 20px;
+   -webkit-border-top-left-radius: 20px;
+   -moz-border-top-left-radius: 20px;
+   -o-border-top-left-radius: 20px;
+   -webkit-border-bottom-left-radius: 20px;
+   -moz-border-bottom-left-radius: 20px;
+   -o-border-bottom-left-radius: 20px;
+   border-color:black;
+  border-style:solid;
+  -khtml-opacity: 0.9;      /* khtml, version anterior de safari */
+    -moz-opacity: 0.9;       /* firefox, mozilla, netscape */
+    opacity: 0.9;           /* safari, chrome, opera */
+     -webkit-transition: all 1s ease-out;
+   -moz-transition: all 1s ease-out;
+   -o-transition: all 1s ease-out;
+}
+
+aside:hover{
+     border-color:#F2F5A9;
+}
+
+aside ul li {
+    border-bottom: 1px dotted #a6a6a6;
+    margin: 0.3em auto;
+}
+
+aside li span {
+    display: block;
+    font-size: 0.7em;
+    margin-bottom: 0.3em;
+}
+
+.ski{
+  float: right;
+  width: 28%;
+  
+}
+
+.flex-container1{
+  float:left;
+  width: 66%;
+  padding-right: 0px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.fut{
+  float: left;
+  width: 28%;
+}
+
+.flex-container2{
+  float: right;
+  width: 66%;
+  padding-right: 0px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
