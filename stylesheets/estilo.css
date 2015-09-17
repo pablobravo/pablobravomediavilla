@@ -40,7 +40,7 @@ body {
 	height: 100%;
 	min-height: 100%;
     margin: 0 auto;
-    background: url(images/fondo.jpg)no-repeat fixed center;
+    background: url(../images/fondo.jpg)no-repeat fixed center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -113,18 +113,18 @@ hr{ height: 1px;
 
 /* CUERPO */
 
-/* eliminaciÛn de m·rgenes y rellenos de elementos */
+/* eliminaci√≥n de m√°rgenes y rellenos de elementos */
 body, div, ul, ol, li, dl, dt, dd {
     margin: 0;
     padding: 0;
 }
 
-/* listas sin viÒetas */
+/* listas sin vi√±etas */
 ul, ol {
 
 }
 
-/* colores, fuentes (tipo y tamaÒo) del sitio */
+/* colores, fuentes (tipo y tama√±o) del sitio */
 header, footer {
 
 }
@@ -161,7 +161,7 @@ h2 { /* colores rgba y bordes de CSS3 */
 
 }
 
-/* secciÛn principal */
+/* secci√≥n principal */
 main {
 
 	z-index:1;
@@ -280,7 +280,7 @@ aside li span {
 	}
 	nav header{
 		display: table-row;
-		height: 30%;/*ajustar a tamaÒo dispositivo*/
+		height: 30%;/*ajustar a tama√±o dispositivo*/
 		transition: background 0.5s ease-out;
 		-webkit-transition: background 0.5s ease-out;
 	}
@@ -318,7 +318,7 @@ aside li span {
 	}
 }
 @media (min-width: 500px) {
-/* PARA P¡GINA PRINCIPAL */
+/* PARA P√ÅGINA PRINCIPAL */
 	nav .background{
 		position: absolute;
 		z-index: -1;
@@ -346,7 +346,7 @@ aside li span {
 	}
 	nav header{
 		display: table-row;
-		height: 150px;/*ajustar a tamaÒo dispositivo*/
+		height: 150px;/*ajustar a tama√±o dispositivo*/
 		transition: background 0.5s ease-out;
 		-webkit-transition: background 0.5s ease-out;
 	}
@@ -513,7 +513,7 @@ aside li span {
 		-webkit-transform: rotate3d(0,0,1,-45deg);
 		transform: rotate3d(0,0,1,-45deg);
 	}
-	/* PARA P¡GINAS SECUNDARIAS */
+	/* PARA P√ÅGINAS SECUNDARIAS */
 	nav .redes{
 		top:90px;
 		right:30px;
@@ -577,7 +577,7 @@ aside li span {
 		position:fixed;
 	    list-style: none;
 		top:0px;
-		right:20%;/*Modificar para tamaÒos movil*/
+		right:20%;/*Modificar para tama√±os movil*/
 		padding:1.4em;
 	   -webkit-background-size: 50% 100%;
 	   -moz-background-size: 50% 100%;
@@ -713,12 +713,12 @@ aside li span {
 		margin:10px;
 		width:280px;
 		height:350px;
-		-webkit-transform:scale(1.1); /*Webkit:Modificamos tamaÒo a escala*/
-		-moz-transform:scale(1.1); /*Mozilla:Modificamos tamaÒo a escala*/
-		-o-transform:scale(1.1); /*Opera:Modificamos tamaÒo a escala*/
-		-webkit-transition-duration: 0.5s; /*Webkit:DuraciÛn de la animaciÛn*/
-		-moz-transition-duration: 0.5s; /*Mozilla:DuraciÛn de la animaciÛ*/
-		-o-transition-duration: 0.5s; /*Opera:DuraciÛn de la animaciÛ*/
+		-webkit-transform:scale(1.1); /*Webkit:Modificamos tama√±o a escala*/
+		-moz-transform:scale(1.1); /*Mozilla:Modificamos tama√±o a escala*/
+		-o-transform:scale(1.1); /*Opera:Modificamos tama√±o a escala*/
+		-webkit-transition-duration: 0.5s; /*Webkit:Duraci√≥n de la animaci√≥n*/
+		-moz-transition-duration: 0.5s; /*Mozilla:Duraci√≥n de la animaci√≥*/
+		-o-transition-duration: 0.5s; /*Opera:Duraci√≥n de la animaci√≥*/
 		opacity: 1;
 	}
 	img.cartel{
@@ -740,12 +740,12 @@ aside li span {
 		margin:10px;
 		width:280px;
 		height:250px;
-		-webkit-transform:scale(1.1); /*Webkit:Modificamos tamaÒo a escala*/
-		-moz-transform:scale(1.1); /*Mozilla:Modificamos tamaÒo a escala*/
-		-o-transform:scale(1.1); /*Opera:Modificamos tamaÒo a escala*/
-		-webkit-transition-duration: 0.5s; /*Webkit:DuraciÛn de la animaciÛn*/
-		-moz-transition-duration: 0.5s; /*Mozilla:DuraciÛn de la animaciÛ*/
-		-o-transition-duration: 0.5s; /*Opera:DuraciÛn de la animaciÛ*/
+		-webkit-transform:scale(1.1); /*Webkit:Modificamos tama√±o a escala*/
+		-moz-transform:scale(1.1); /*Mozilla:Modificamos tama√±o a escala*/
+		-o-transform:scale(1.1); /*Opera:Modificamos tama√±o a escala*/
+		-webkit-transition-duration: 0.5s; /*Webkit:Duraci√≥n de la animaci√≥n*/
+		-moz-transition-duration: 0.5s; /*Mozilla:Duraci√≥n de la animaci√≥*/
+		-o-transition-duration: 0.5s; /*Opera:Duraci√≥n de la animaci√≥*/
 		opacity: 1;
 	}
 	img.cabecera{
@@ -765,12 +765,12 @@ aside li span {
 	img.cabecera:hover{
 		z-index:1;
 		margin:10px;
-		-webkit-transform:scale(1.1); /*Webkit:Modificamos tamaÒo a escala*/
-		-moz-transform:scale(1.1); /*Mozilla:Modificamos tamaÒo a escala*/
-		-o-transform:scale(1.1); /*Opera:Modificamos tamaÒo a escala*/
-		-webkit-transition-duration: 0.5s; /*Webkit:DuraciÛn de la animaciÛn*/
-		-moz-transition-duration: 0.5s; /*Mozilla:DuraciÛn de la animaciÛ*/
-		-o-transition-duration: 0.5s; /*Opera:DuraciÛn de la animaciÛ*/
+		-webkit-transform:scale(1.1); /*Webkit:Modificamos tama√±o a escala*/
+		-moz-transform:scale(1.1); /*Mozilla:Modificamos tama√±o a escala*/
+		-o-transform:scale(1.1); /*Opera:Modificamos tama√±o a escala*/
+		-webkit-transition-duration: 0.5s; /*Webkit:Duraci√≥n de la animaci√≥n*/
+		-moz-transition-duration: 0.5s; /*Mozilla:Duraci√≥n de la animaci√≥*/
+		-o-transition-duration: 0.5s; /*Opera:Duraci√≥n de la animaci√≥*/
 		opacity: 1;
 	}
 	 div.izq{
