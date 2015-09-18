@@ -362,10 +362,7 @@ aside li span {
 		margin-top:10px;
 	}
     .txt3 {
-    	border-left:1px solid #A4A4A4;
-    	float:right;
-    	width:46%;
-    	padding-left:50px;
+	margin:10px;
     }	
     .txt3 p{
     	padding-bottom:40px;
@@ -490,6 +487,19 @@ aside li span {
 		margin:30px;
 		list-style:none;
 	 }
+	 
+	 .face{
+		display:none;
+	}
+	.cvitae{
+		text-align:center;
+		width:7em;
+		height:8em;
+	}
+	.fondomenu ul.navegacion li a{
+		
+		font-size:80px;
+	}
 }
 @media (min-width: 500px) {
 	nav .background{
