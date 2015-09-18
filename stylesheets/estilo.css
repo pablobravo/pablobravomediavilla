@@ -231,6 +231,92 @@ aside li span {
 .flex-container2{
 
 }
+
+@media screen and (max-device-width: 800px) {
+
+}
+@media(max-width: 1500px) {
+}
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (min-width: 1024px){
+
+}
+@media screen and (max-width: 900px){	}
+@media screen and (max-width: 800px){}
+@media screen and (max-height: 768px){}
+@media screen and (max-width: 700px) and (orientation: landscape){}
+@media (max-width: 700px) and (orientation: portrait) {}
+@media (max-width: 700px) {
+	.pb{
+		width:10em;
+		height:10em;
+		clear:both;
+	}
+	h1{
+		display:none;
+	}
+}
+
+@media (max-width: 500px) {
+	.pb{
+		position:fixed;
+		top:0px;
+		right:0px;
+		width:100%;
+		height:100%;
+		opacity:0.1;
+	}
+	nav header .menu-button{
+		display: none;
+	}
+	nav .wrapper-nav{
+		display: table;
+		height: 100%;
+		width: 100%;
+		clear:both;
+	}
+	nav header{
+		display: table-row;
+		height: 30%;/*ajustar a tamaño dispositivo*/
+		transition: background 0.5s ease-out;
+		-webkit-transition: background 0.5s ease-out;
+	}
+	nav .menu{
+		display: table-row;
+		text-align: center;
+		font-size: 18px;
+		opacity: 1;
+		transition: all 0.5s ease-out;
+		-webkit-transition: all 0.5s ease-out;
+		z-index: 2;
+	}
+	nav .menu .wrapper-menu{
+		display: table-cell;
+		vertical-align: middle;
+		padding: 30px 0;
+	}
+	nav .menu .item{
+		padding: 10px;
+		font-size: 50px;
+		line-height: 50px;
+		color: #b5ac09;
+		display: block;
+		position: relative;
+		font-weight: 100;
+		text-transform: uppercase;
+	}
+	nav .menu .item:hover{
+		background: #b5ac09;
+		background: -webkit-radial-gradient(#b5ac09 40%,rgba(0,0,0,0)); /*Safari 5.1-6*/
+		background: -o-radial-gradient(#b5ac09 40%,rgba(0,0,0,0)); /*Opera 11.1-12*/
+		background: -moz-radial-gradient(#b5ac09 40%,rgba(0,0,0,0)); /*Fx 3.6-15*/
+		background: radial-gradient(#b5ac09 40%, rgba(255,255,255,0)); /*Standard*/
+		color: black;
+	}
+}
+@media (min-width: 500px) {
 	nav .background{
 		position: absolute;
 		z-index: -1;
@@ -699,4 +785,4 @@ aside li span {
 		margin:30px;
 		list-style:none;
 	 }
-
+}
