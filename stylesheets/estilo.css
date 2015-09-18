@@ -315,12 +315,12 @@ aside li span {
 	}
 	.texto{
     	font-family:HELVETICA, HELVETICA NUE, ARIAL;
-    	max-width:100%;
+    	width:100%;
     	margin-top:5%;
     	text-align:center;
     	color:black;
     	font-weight: normal;
-		background-color:white;
+	background-color:white;
     }
     .txt1{
     	border-bottom:1px solid #A4A4A4;
