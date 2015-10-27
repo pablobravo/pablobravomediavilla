@@ -1,26 +1,9 @@
-(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
-	  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-!function(d,s,id){
-	var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-	if(!d.getElementById(id)){
-		js=d.createElement(s);
-		js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
-		fjs.parentNode.insertBefore(js,fjs);
-	}
-}(document,"script","twitter-wjs");
-
 var desp = innerWidth/2;
 var desp2 = 0;
 
 function desplazarseLateral() {
-	var im = document.getElementById('dv');
-	var im2 = document.getElementById('dv2');
+	var im = document.getElementById('pablo');
+	var im2 = document.getElementById('bravo');
 	desp=desp+1;
 	desp2=desp2-1;
 	if(desp==(innerWidth/2)+1){
@@ -41,7 +24,164 @@ function desplazarseLateral() {
 
 setTimeout("desplazarseLateral()", 1);
 
+$(document).ready(function(){
+	$('.ir-arriba').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 300);
+	});
+ 
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 0 ){
+			$('.ir-arriba').slideDown(300);
+		} else {
+			$('.ir-arriba').slideUp(300);
+		}
+	});
+ 
+});
+ 
+function moverImagenes(){ 
+if($(window).width() >= 999){
+  $(function() {
+	  $('#esqui').hover(function() {
+		$('#nieve').css('marginRight', '10%');
+		$('#nieve').css('opacity', '1');
+	  }, function() {
+		// vuelve a dejar el <div> como estaba al hacer el "mouseout"
+		$('#nieve').css('marginRight', '16%');
+		$('#nieve').css('opacity', '0');
+	  });
+});
 
+  $(function() {
+  $('#golf').hover(function() {
+	$('#golfista').css('marginRight', '10%');
+	$('#golfista').css('opacity', '1');
+  }, function() {
+    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
+	$('#golfista').css('marginRight', '16%');
+	$('#golfista').css('opacity', '0');
+  });
+});
+
+  $(function() {
+  $('#futbol').hover(function() {
+	$('#jugando').css('marginLeft', '10%');
+	$('#jugando').css('opacity', '1');
+
+  }, function() {
+    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
+	$('#jugando').css('marginLeft', '16%');
+	$('#jugando').css('opacity', '0');
+  });
+});
+
+  $(function() {
+  $('#pintar').hover(function() {
+	$('#pintando').css('marginLeft', '10%');
+	$('#pintando').css('opacity', '1');
+  }, function() {
+    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
+	$('#pintando').css('marginLeft', '16%');
+	$('#pintando').css('opacity', '0');
+  });
+});
+
+$(function() {
+	  $('#padel').hover(function() {
+		$('#imgpadel').css('marginRight', '10%');
+		$('#imgpadel').css('opacity', '1');
+	  }, function() {
+		// vuelve a dejar el <div> como estaba al hacer el "mouseout"
+		$('#imgpadel').css('marginRight', '16%');
+		$('#imgpadel').css('opacity', '0');
+	});
+});
+$(function() {
+  $('#surf').hover(function() {
+	$('#imgsurf').css('marginLeft', '10%');
+	$('#imgsurf').css('opacity', '1');
+  }, function() {
+    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
+	$('#imgsurf').css('marginLeft', '16%');
+	$('#imgsurf').css('opacity', '0');
+  });
+});
+$(function() {
+  $('#rutas').hover(function() {
+	$('#imgrutas').css('opacity', '1');
+  }, function() {
+    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
+	$('#imgrutas').css('opacity', '0');
+  });
+});
+}
+else if($(window).width() > 500){
+	$('#nieve').css('marginRight', '10%');
+	$('#nieve').css('opacity', '1');
+	$('#golfista').css('marginRight', '10%');
+	$('#golfista').css('opacity', '1');
+	$('#jugando').css('marginLeft', '10%');
+	$('#jugando').css('opacity', '1');
+	$('#pintando').css('marginLeft', '10%');
+	$('#pintando').css('opacity', '1');
+	$('#imgpadel').css('marginRight', '10%');
+	$('#imgpadel').css('opacity', '1');
+	$('#imgsurf').css('marginLeft', '10%');
+	$('#imgsurf').css('opacity', '1');
+	$('#imgrutas').css('marginRight', '5%');
+	$('#imgrutas').css('opacity', '1');
+}
+  setTimeout("moverImagenes()", 1000);
+}
+setTimeout("moverImagenes()", 1000);
+
+function moverNombre(){
+	var work = document.getElementById('movernombre');
+	if (window.innerWidth>1000) {	
+		var scrll= $(document).scrollTop().valueOf();
+		if(scrll<=50){
+			work.style.marginTop="120px";
+		}
+		else if(scrll > 50 && scrll<300){
+			var m = scrll*2;
+			work.style.marginTop=m+"px";
+		}
+		if(scrll<=50){
+			work.style.color="#2c3b55";
+			work.style.opacity="1"
+		}
+		else if(scrll>50 && scrll<=100){
+			work.style.color="#CECEF6";
+			work.style.opacity="0.6"
+		}
+		else if(scrll>100 && scrll<=200){
+			work.style.color="#CECEF6";
+			work.style.opacity="0.4"
+		}
+		else if(scrll>200 && scrll<=270){
+			work.style.color="#CECEF6";
+			work.style.opacity="0.2"
+		}
+		else if(scrll>270){
+			work.style.color="#CECEF6";
+			work.style.opacity="0.2"
+			work.style.marginTop="45%";
+		}
+	}
+	else{
+		work.style.color="#2c3b55";
+		work.style.opacity="1"
+		work.style.marginTop="120px";
+	}
+	
+  
+  setTimeout("moverNombre()", 100);
+}
+setTimeout("moverNombre()", 100);
+
+/*
 function agregar(){
 var work = document.getElementById('work');
 	var scrll= $(document).scrollTop().valueOf();
@@ -55,17 +195,7 @@ var work = document.getElementById('work');
   
   setTimeout("agregar()", 8);
 }
-setTimeout("agregar()", 8);
-
-var grados = 0;
-  function mover() {
-		var cr = document.getElementById('cronometros');
-		grados = grados +1;
-        cr.style.webkitTransform  = 'rotate('+grados+'deg)';
-		cr.style.transform = 'rotate('+grados+'deg)';
-        setTimeout("mover()", 80);
-  }
-setTimeout("mover()", 80);
+setTimeout("agregar()", 8);*/
 
 /*MENU*/
 
@@ -92,17 +222,6 @@ function loadFunctions(base){
 	base_html = base;
 	// GENERAL
 	openMenu();	
-	loadFadeLoad();		
-	loader();	
-
-	
-	// LOAD PLUGINS
-	$( window ).load(function(){
-		if(!arePluginsLoaded){
-			loadPlugins();
-			arePluginsLoaded = true;
-		}
-	})	
 }
 function openWork(){
 	var work = document.getElementById('work');
@@ -131,7 +250,6 @@ function actionMenu(){
 	$("nav .menu-button").parents("header").toggleClass("active");
 	$("nav").toggleClass("active");
 	$("html, body").toggleClass("overflow");
-	updateLogoWhitePage();
 }
 
 function homeAnimations(){
