@@ -35,10 +35,80 @@
    src: url("../fuentes/Big.ttf");
 }
 /*General*/
+@-webkit-keyframes bounceInDown {
+	  from, 60%, 75%, 90%, to {
+	    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	  }
+	
+	  0% {
+	    opacity: 0;
+	    transform: translate3d(0, -3000px, 0);
+	  }
+	
+	  60% {
+	    opacity: 1;
+	    transform: translate3d(0, 25px, 0);
+	  }
+	
+	  75% {
+	    transform: translate3d(0, -10px, 0);
+	  }
+	
+	  90% {
+	    transform: translate3d(0, 5px, 0);
+	  }
+	
+	  to {
+	    transform: none;
+	  }
+}
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+@-webkit-keyframes aparecer {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+@keyframes aparecer {
+  from {
+	opacity: 0;
+  }
+  to {
+	opacity: 1;
+  }
+}
 #pablo{
 	position:fixed;
 	z-index:5;
-	right:680;
+	right:680px;
 }
 #bravo{
 	position:fixed;
@@ -54,7 +124,7 @@ html{
 	min-height: 100%;	
 }
 @media (min-width: 1090px) {
-	header h1.nombre{
+	.responsive h1.nombre{
 		font-family:Plane;
 		font-size:60px;
 		text-align:center;
@@ -139,7 +209,7 @@ html{
 	 }
 }
 @media (min-width: 1000px) and (max-width: 1090px){
-	header h1.nombre{
+	.responsive h1.nombre{
 		font-family:Plane;
 		font-size:40px;
 		text-align:center;
@@ -215,7 +285,7 @@ html{
 	 }
 }
 @media (min-width: 501px) and (max-width: 999px){
-	header h1.nombre{
+	.responsive h1.nombre{
 		font-family:Plane;
 		font-size:40px;
 		text-align:center;
@@ -307,45 +377,44 @@ html{
 	}
 	span.ir-arriba{
 		display:none;
-		padding:20px;
-		/*background:#024959;
-		font-size:20px;
-		color:#fff;*/
 		cursor:pointer;
 		position: fixed;
 		bottom:20px;
-		left:20px;
+		left:30px;
 		z-index:2;
-	}
-	div.flecha1{
 		width:30px;
 		height:30px;
 		border-top:4px solid #2c3b55;
 		border-right:4px solid #2c3b55;
 		-webkit-transform: rotate(-45deg);
 		transform: rotate(-45deg);
-		margin-left:-10px;
-		margin-top:19px;
+		margin-top:25px;
 	}
 	#movernombre{
 		margin-top:120px;
 		color:#2c3b55;
+		animation: bounceInDown 6s ease-in;
+		-webkit-animation: bounceInDown 6s ease-in;
+		-moz-animation: bounceInDown 6s ease-in;
 	}
 	#logo{
 		font-family:Press;
 		font-size:220px;
 		text-align:center;
 		color:#848484;
-		position:block;
+		display:block;
 		margin-top:-160px;
 		margin-right:30px;
+		animation: aparecer 6s ease-in;
+		-webkit-animation: aparecer 6s ease-in;
+		-moz-animation: aparecer 6s ease-in;
 	}	
-	header p.b{
+	.responsive p.b{
 		-webkit-transform: rotate(180deg);
 		transform: rotate(180deg);
-		margin-right:85x;
+	
 	}
-	header p.p{
+	.responsive p.p{
 		margin-top:-446px;
 		margin-left:85px;
 	}
@@ -367,7 +436,7 @@ html{
 		height: 100%;
 		width: 100%;
 	}
-	nav header{
+	nav .responsive{
 		display: table-row;
 		height: 150px;
 		transition: background 0.5s ease-out;
@@ -467,7 +536,7 @@ html{
 
 	}
 	/* MENU BOTON */
-	nav header .menu-button{
+	nav .responsive .menu-button{
 		position: fixed;
 		top: 0px;
 		left: 0px;
@@ -476,7 +545,7 @@ html{
 		padding-top:8px;
 		
 	}
-	nav header .menu-button .button{
+	nav .responsive .menu-button .button{
 		display: table-cell;
 		vertical-align: middle;
 		height: 50px;
@@ -484,7 +553,7 @@ html{
 		cursor: pointer;
 		
 	}
-	nav header .menu-button .lines{
+	nav .responsive .menu-button .lines{
 		display: inline-block;
 		width: 40px;
 		height: 3px;
@@ -494,16 +563,16 @@ html{
 		transition: all .3s ease;
 		position: relative;
 	}
-	nav header .menu-button.black .lines,
-	nav header .menu-button.black .lines:before,
-	nav header .menu-button.black .lines:after{
+	nav .responsive .menu-button.black .lines,
+	nav .responsive .menu-button.black .lines:before,
+	nav .responsive .menu-button.black .lines:after{
 		background: #2c3b55;
 	}
-	nav.active header .menu-button .lines{
+	nav.active .responsive .menu-button .lines{
 		background: 0 0;
 	}
-	nav header .menu-button .lines:before,
-	nav header .menu-button .lines:after{
+	nav .responsive .menu-button .lines:before,
+	nav .responsive .menu-button .lines:after{
 		display: inline-block;
 		width: 40px;
 		height: 3px;
@@ -517,31 +586,31 @@ html{
 		-webkit-transform-origin: .1rem center;
 		transform-origin: .1rem center;
 	}
-	nav header .menu-button .lines:before{
+	nav .responsive .menu-button .lines:before{
 		-webkit-transform-origin: 50% 50%;
 		transform-origin: 50% 50%;
 		top: -10px;
 		width: 2.5rem;
 	}
-	nav header .menu-button:hover .lines:before{
+	nav .responsive .menu-button:hover .lines:before{
 		top: -15px;
 	}
-	nav.active header .menu-button .lines:before{
+	nav.active .responsive .menu-button .lines:before{
 		top: 0px;
 		background:#2c3b55;
 		-webkit-transform: rotate3d(0,0,1,45deg);
 		transform: rotate3d(0,0,1,45deg);
 	}
-	nav header .menu-button .lines:after{
+	nav .responsive .menu-button .lines:after{
 		-webkit-transform-origin: 50% 50%;
 		transform-origin: 50% 50%;
 		top: 10px;
 		width: 2.5rem;
 	}
-	nav header .menu-button:hover .lines:after{
+	nav .responsive .menu-button:hover .lines:after{
 		top: 15px;
 	}
-	nav.active header .menu-button .lines:after{
+	nav.active .responsive .menu-button .lines:after{
 		top: 0px;
 		background:#2c3b55;
 		-webkit-transform: rotate3d(0,0,1,-45deg);
@@ -1008,48 +1077,46 @@ html{
 	}
 	span.ir-arriba{
 		display:none;
-		padding:20px;
-		/*background:#024959;
-		font-size:20px;
-		color:#fff;*/
 		cursor:pointer;
 		position: fixed;
 		bottom:20px;
-		left:20px;
+		left:30px;
 		z-index:2;
-	}
-	div.flecha1{
 		width:30px;
 		height:30px;
 		border-top:4px solid #2c3b55;
 		border-right:4px solid #2c3b55;
 		-webkit-transform: rotate(-45deg);
 		transform: rotate(-45deg);
-		margin-left:-10px;
-		margin-top:19px;
+		margin-top:25px;
 	}
 	#movernombre{
 		color:#2c3b55;
+		animation: bounceInDown 6s ease-in;
+		-webkit-animation: bounceInDown 6s ease-in;
+		-moz-animation: bounceInDown 6s ease-in;
 	}
 	#logo{
 		font-family:Press;
 		font-size:220px;
 		text-align:center;
 		color:#848484;
-		position:block;
+		display:block
 		margin-top:-160px;
 		margin-right:30px;
+		animation: aparecer 6s ease-in;
+		-webkit-animation: aparecer 6s ease-in;
+		-moz-animation: aparecer 6s ease-in;
 	}	
-	header p.b{
+	.responsive p.b{
 		-webkit-transform: rotate(180deg);
 		transform: rotate(180deg);
-		margin-right:85x;
 	}
-	header p.p{
+	.responsive p.p{
 		margin-top:-446px;
 		margin-left:85px;
 	}
-	header h1.nombre{
+	.responsive h1.nombre{
 		margin-top:-60px;
 		font-family:Plane;
 		font-size:30px;
@@ -1072,7 +1139,7 @@ html{
 		height: 100%;
 		width: 100%;
 	}
-	nav header{
+	nav .responsive{
 		display: table-row;
 		height: 150px;
 		transition: background 0.5s ease-out;
@@ -1172,7 +1239,7 @@ html{
 
 	}
 	/* MENU BOTON */
-	nav header .menu-button{
+	nav .responsive .menu-button{
 		position: fixed;
 		top: 0px;
 		left: 0px;
@@ -1181,7 +1248,7 @@ html{
 		padding-top:8px;
 		
 	}
-	nav header .menu-button .button{
+	nav .responsive .menu-button .button{
 		display: table-cell;
 		vertical-align: middle;
 		height: 50px;
@@ -1189,7 +1256,7 @@ html{
 		cursor: pointer;
 		
 	}
-	nav header .menu-button .lines{
+	nav .responsive .menu-button .lines{
 		display: inline-block;
 		width: 40px;
 		height: 3px;
@@ -1199,16 +1266,16 @@ html{
 		transition: all .3s ease;
 		position: relative;
 	}
-	nav header .menu-button.black .lines,
-	nav header .menu-button.black .lines:before,
-	nav header .menu-button.black .lines:after{
+	nav .responsive .menu-button.black .lines,
+	nav .responsive .menu-button.black .lines:before,
+	nav .responsive .menu-button.black .lines:after{
 		background: #2c3b55;
 	}
-	nav.active header .menu-button .lines{
+	nav.active .responsive .menu-button .lines{
 		background: 0 0;
 	}
-	nav header .menu-button .lines:before,
-	nav header .menu-button .lines:after{
+	nav .responsive .menu-button .lines:before,
+	nav .responsive .menu-button .lines:after{
 		display: inline-block;
 		width: 40px;
 		height: 3px;
@@ -1222,31 +1289,31 @@ html{
 		-webkit-transform-origin: .1rem center;
 		transform-origin: .1rem center;
 	}
-	nav header .menu-button .lines:before{
+	nav .responsive .menu-button .lines:before{
 		-webkit-transform-origin: 50% 50%;
 		transform-origin: 50% 50%;
 		top: -10px;
 		width: 2.5rem;
 	}
-	nav header .menu-button:hover .lines:before{
+	nav .responsive .menu-button:hover .lines:before{
 		top: -15px;
 	}
-	nav.active header .menu-button .lines:before{
+	nav.active .responsive .menu-button .lines:before{
 		top: 0px;
 		background:#2c3b55;
 		-webkit-transform: rotate3d(0,0,1,45deg);
 		transform: rotate3d(0,0,1,45deg);
 	}
-	nav header .menu-button .lines:after{
+	nav .responsive .menu-button .lines:after{
 		-webkit-transform-origin: 50% 50%;
 		transform-origin: 50% 50%;
 		top: 10px;
 		width: 2.5rem;
 	}
-	nav header .menu-button:hover .lines:after{
+	nav .responsive .menu-button:hover .lines:after{
 		top: 15px;
 	}
-	nav.active header .menu-button .lines:after{
+	nav.active .responsive .menu-button .lines:after{
 		top: 0px;
 		background:#2c3b55;
 		-webkit-transform: rotate3d(0,0,1,-45deg);
