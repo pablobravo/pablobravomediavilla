@@ -1,28 +1,4 @@
-var desp = innerWidth/2;
-var desp2 = 0;
 
-function desplazarseLateral() {
-	var im = document.getElementById('pablo');
-	var im2 = document.getElementById('bravo');
-	desp=desp+1;
-	desp2=desp2-1;
-	if(desp==(innerWidth/2)+1){
-		setTimeout("desplazarseLateral()", 3000);
-		return;
-	}
-	
-	im.style.right = desp+"px";
-	im2.style.right = desp2+"px";
-	
-	if(desp>innerWidth){
-		im.style.display= "none";	
-		im2.style.display= "none";	
-		return;
-	}	
-	setTimeout("desplazarseLateral()", 1);
-}
-
-setTimeout("desplazarseLateral()", 1);
 
 $(document).ready(function(){
 	$('.ir-arriba').click(function(){
@@ -40,102 +16,82 @@ $(document).ready(function(){
 	});
  
 });
- 
-function moverImagenes(){ 
-if($(window).width() >= 999){
-  $(function() {
-	  $('#esqui').hover(function() {
+
+
+
+function verImagenes(){ 
+	var scroll = $(window).scrollTop();
+	scroll = scroll +  (window.innerHeight/2);
+	var posEsqui = Math.round($('#esqui').offset().top); 
+	if(posEsqui < scroll){
 		$('#nieve').css('marginRight', '10%');
 		$('#nieve').css('opacity', '1');
-	  }, function() {
+	  }else {
 		// vuelve a dejar el <div> como estaba al hacer el "mouseout"
 		$('#nieve').css('marginRight', '16%');
-		$('#nieve').css('opacity', '0');
-	  });
-});
-
-  $(function() {
-  $('#golf').hover(function() {
-	$('#golfista').css('marginRight', '10%');
-	$('#golfista').css('opacity', '1');
-  }, function() {
-    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
-	$('#golfista').css('marginRight', '16%');
-	$('#golfista').css('opacity', '0');
-  });
-});
-
-  $(function() {
-  $('#futbol').hover(function() {
-	$('#jugando').css('marginLeft', '10%');
-	$('#jugando').css('opacity', '1');
-
-  }, function() {
-    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
-	$('#jugando').css('marginLeft', '16%');
-	$('#jugando').css('opacity', '0');
-  });
-});
-
-  $(function() {
-  $('#pintar').hover(function() {
-	$('#pintando').css('marginLeft', '10%');
-	$('#pintando').css('opacity', '1');
-  }, function() {
-    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
-	$('#pintando').css('marginLeft', '16%');
-	$('#pintando').css('opacity', '0');
-  });
-});
-
-$(function() {
-	  $('#padel').hover(function() {
+		$('#nieve').css('opacity', '0');}
+	
+	var posGolf = Math.round($('#golf').offset().top); 
+	if(posGolf < scroll){
+		$('#golfista').css('marginRight', '10%');
+		$('#golfista').css('opacity', '1');
+	 }else {
+		// vuelve a dejar el <div> como estaba al hacer el "mouseout"
+		  $('#golfista').css('marginRight', '16%');
+		$('#golfista').css('opacity', '0');
+	 }
+	
+	var posFutbol = Math.round($('#futbol').offset().top); 
+	if(posFutbol < scroll){
+		$('#jugando').css('marginLeft', '10%');
+		$('#jugando').css('opacity', '1');
+	 }else {
+		// vuelve a dejar el <div> como estaba al hacer el "mouseout"
+		 $('#jugando').css('marginLeft', '16%');
+			$('#jugando').css('opacity', '0');
+	 }
+	
+	var posPintar = Math.round($('#pintar').offset().top); 
+	if(posPintar < scroll){
+		$('#pintando').css('marginLeft', '10%');
+		$('#pintando').css('opacity', '1');
+	 }else {
+		// vuelve a dejar el <div> como estaba al hacer el "mouseout"
+		 $('#pintando').css('marginLeft', '16%');
+			$('#pintando').css('opacity', '0');
+	 }
+	
+	var posPadel = Math.round($('#padel').offset().top); 
+	if(posPadel < scroll){
 		$('#imgpadel').css('marginRight', '10%');
 		$('#imgpadel').css('opacity', '1');
-	  }, function() {
+	 }else {
 		// vuelve a dejar el <div> como estaba al hacer el "mouseout"
-		$('#imgpadel').css('marginRight', '16%');
-		$('#imgpadel').css('opacity', '0');
-	});
-});
-$(function() {
-  $('#surf').hover(function() {
-	$('#imgsurf').css('marginLeft', '10%');
-	$('#imgsurf').css('opacity', '1');
-  }, function() {
-    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
-	$('#imgsurf').css('marginLeft', '16%');
-	$('#imgsurf').css('opacity', '0');
-  });
-});
-$(function() {
-  $('#rutas').hover(function() {
-	$('#imgrutas').css('opacity', '1');
-  }, function() {
-    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
-	$('#imgrutas').css('opacity', '0');
-  });
-});
+		 $('#imgpadel').css('marginRight', '16%');
+			$('#imgpadel').css('opacity', '0');
+	 }
+	
+	var posSurf = Math.round($('#surf').offset().top); 
+	if(posSurf < scroll){
+		$('#imgsurf').css('marginLeft', '10%');
+		$('#imgsurf').css('opacity', '1');
+	 }else {
+		// vuelve a dejar el <div> como estaba al hacer el "mouseout"
+		 $('#imgsurf').css('marginLeft', '16%');
+		$('#imgsurf').css('opacity', '0');
+	 }
+	
+	var posRuta = Math.round($('#rutas').offset().top); 
+	if(posRuta < scroll){
+		$('#imgrutas').css('opacity', '1');
+	 }else {
+		// vuelve a dejar el <div> como estaba al hacer el "mouseout"
+		 $('#imgrutas').css('opacity', '0');
+	 }
+	
+	setTimeout("verImagenes()", 100);
 }
-else if($(window).width() > 500){
-	$('#nieve').css('marginRight', '10%');
-	$('#nieve').css('opacity', '1');
-	$('#golfista').css('marginRight', '10%');
-	$('#golfista').css('opacity', '1');
-	$('#jugando').css('marginLeft', '10%');
-	$('#jugando').css('opacity', '1');
-	$('#pintando').css('marginLeft', '10%');
-	$('#pintando').css('opacity', '1');
-	$('#imgpadel').css('marginRight', '10%');
-	$('#imgpadel').css('opacity', '1');
-	$('#imgsurf').css('marginLeft', '10%');
-	$('#imgsurf').css('opacity', '1');
-	$('#imgrutas').css('marginRight', '5%');
-	$('#imgrutas').css('opacity', '1');
-}
-  setTimeout("moverImagenes()", 1000);
-}
-setTimeout("moverImagenes()", 1000);
+setTimeout("verImagenes()", 100);
 
 function moverNombre(){
 	var work = document.getElementById('movernombre');
