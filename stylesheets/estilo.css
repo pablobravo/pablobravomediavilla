@@ -863,6 +863,7 @@ html{
 	 article.fotos{
 		clear:both;
 	 }	
+	 	
 	 /*SOBRE MI*/
 	#sobremi{
 		clear:both;
@@ -1057,6 +1058,35 @@ html{
 		-o-transition-duration: 0.5s; /*Opera:Duración de la animació*/
 		margin-bottom:20px;
 	 }
+	 
+	 
+	 .footer {
+	    overflow: hidden;
+	    perspective: 500px;
+	    transform-style: preserve-3d;
+	    max-width: 100%;
+	    clear:both;
+    	text-align:center;
+    	color:black;
+    	
+	}
+		 
+	.footer_block {
+	    padding: 5% 1.5em;
+	    transform-origin: center bottom;
+	    background-color:#A9D0F5;
+	}
+	.wrapper {
+	    max-width: 60em;
+	    margin: 0 auto;
+	}
+	h3 {
+	    padding: 0;
+	    margin: 1.00em 0 1.00em 0;
+	    font-size: 1.50em;
+	    line-height: 1.25em;
+	    font-weight: normal;
+	}
 }
 /*CSS para movil*/
 @media (max-width: 500px) {
@@ -1101,7 +1131,7 @@ html{
 		font-size:220px;
 		text-align:center;
 		color:#848484;
-		display:block
+		display:block;
 		margin-top:-160px;
 		margin-right:30px;
 		animation: aparecer 6s ease-in;
@@ -1623,4 +1653,31 @@ html{
 		border-radius: 10px;
 		margin-bottom:20px;
 	 }
+	 	 .footer {
+	    overflow: hidden;
+	    perspective: 500px;
+	    transform-style: preserve-3d;
+	    max-width: 100%;
+	    clear:both;
+    	text-align:center;
+    	color:black;
+    	
+	}
+		 
+	.footer_block {
+	    padding: 5% 1.5em;
+	    transform-origin: center bottom;
+	    background-color:#A9D0F5;
+	}
+	.wrapper {
+	    max-width: 60em;
+	    margin: 0 auto;
+	}
+	h3 {
+	    padding: 0;
+	    margin: 1.00em 0 1.00em 0;
+	    font-size: 1.50em;
+	    line-height: 1.25em;
+	    font-weight: normal;
+	}
 }
